@@ -12,8 +12,8 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <CommunityGroups />
       <CommunityHighlights />
+      <CommunityGroups />
       <Testimonials />
       <ContactForm />
     </>
