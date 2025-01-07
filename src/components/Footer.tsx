@@ -1,5 +1,7 @@
-import { Code2, Facebook, Twitter, Linkedin, Github } from 'lucide-react';
+import { Code2, Mail, MapPin,  } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { FaWhatsapp, FaTelegramPlane, FaLinkedin, FaYoutube, FaInstagram } from "react-icons/fa";
+
 
 export default function Footer() {
   return (
@@ -17,25 +19,29 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li><Link to="/blog" className="text-gray-400 hover:text-white">Blog</Link></li>
-              <li><Link to="/tutorials" className="text-gray-400 hover:text-white">Tutorials</Link></li>
-              <li><Link to="/docs" className="text-gray-400 hover:text-white">Documentation</Link></li>
-            </ul>
-          </div>
 
           {/* Company */}
           <div>
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><Link to="/about" className="text-gray-400 hover:text-white">About Us</Link></li>
+              <li><Link to="/about-us" className="text-gray-400 hover:text-white">About Us</Link></li>
               <li><Link to="/careers" className="text-gray-400 hover:text-white">Careers</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white">Contact</Link></li>
             </ul>
           </div>
+          {/* Resources */}
+          <div>
+  <h3 className="text-white font-semibold mb-4">Contact Us</h3>
+  <ul className="space-y-2">
+    <li className="flex items-center gap-4"> {/* Updated gap */}
+      <MapPin size={16} className="text-gray-400" />
+      <span className="text-gray-400 hover:text-white">New Delhi, India</span>
+    </li>
+    <li className="flex items-center gap-4"> {/* Updated gap */}
+      <Mail size={16} className="text-gray-400" />
+      <span className="text-gray-400 hover:text-white">letscode@lets-code.co.in</span>
+    </li>
+  </ul>
+</div>
 
           {/* Legal */}
           <div>
@@ -43,6 +49,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li> <Link to="/privacy-policy" className="text-gray-400 hover:text-white">Privacy Policy</Link></li>
               <li><Link to="/terms-and-conditions" className="text-gray-400 hover:text-white">Terms & Conditions</Link></li>
+              <li><Link to="/terms-of-refund" className="text-gray-400 hover:text-white">Refund & Cancelation Policy</Link></li>
             </ul>
           </div>
         </div>
@@ -52,20 +59,53 @@ export default function Footer() {
             <p className="text-gray-400">
               © {new Date().getFullYear()} Let's Code. All rights reserved.
             </p>
-            <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Linkedin className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Github className="h-6 w-6" />
-              </a>
-            </div>
+             <div className="flex justify-center gap-4 mt-6">
+                                    <a
+                                      href="https://whatsapp.com/channel/0029Va9IblC7dmecjzkkn811"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      aria-label="WhatsApp"
+                                      className="text-green-500 hover:text-green-600"
+                                    >
+                                      <FaWhatsapp className="h-6 w-6" />
+                                    </a>
+                                    <a
+                                      href="https://t.me/offcampusjobsupdatess"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      aria-label="Telegram"
+                                      className="text-blue-500 hover:text-blue-600"
+                                    >
+                                      <FaTelegramPlane className="h-6 w-6" />
+                                    </a>
+                                    <a
+                                      href="https://www.linkedin.com/company/lets-code-forever/"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      aria-label="LinkedIn"
+                                      className="text-blue-700 hover:text-blue-800"
+                                    >
+                                      <FaLinkedin className="h-6 w-6" />
+                                    </a>
+                                    <a
+                                      href="https://www.youtube.com/@letscodewithavinash"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      aria-label="YouTube"
+                                      className="text-red-600 hover:text-red-700"
+                                    >
+                                      <FaYoutube className="h-6 w-6" />
+                                    </a>
+                                    <a
+                                      href="https://www.instagram.com/lets__code/"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      aria-label="Instagram"
+                                      className="text-pink-500 hover:text-pink-600"
+                                    >
+                                      <FaInstagram className="h-6 w-6" />
+                                    </a>
+                                  </div>
           </div>
         </div>
       </div>

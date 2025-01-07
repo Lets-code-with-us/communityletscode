@@ -68,7 +68,7 @@ const JobUpdates = () => {
       {/* Social Media Icons Section */}
       <div className="flex justify-center gap-4 mt-6">
         <a
-          href="https://wa.me/your-number"
+          href="https://whatsapp.com/channel/0029Va9IblC7dmecjzkkn811"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"
@@ -77,7 +77,7 @@ const JobUpdates = () => {
           <FaWhatsapp className="h-6 w-6" />
         </a>
         <a
-          href="https://t.me/your-channel"
+          href="https://t.me/offcampusjobsupdatess"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Telegram"
@@ -86,7 +86,7 @@ const JobUpdates = () => {
           <FaTelegramPlane className="h-6 w-6" />
         </a>
         <a
-          href="https://www.linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/company/lets-code-forever/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
@@ -95,7 +95,7 @@ const JobUpdates = () => {
           <FaLinkedin className="h-6 w-6" />
         </a>
         <a
-          href="https://www.youtube.com/channel/your-channel"
+          href="https://www.youtube.com/@letscodewithavinash"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="YouTube"
@@ -104,7 +104,7 @@ const JobUpdates = () => {
           <FaYoutube className="h-6 w-6" />
         </a>
         <a
-          href="https://www.instagram.com/your-profile"
+          href="https://www.instagram.com/lets__code/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"

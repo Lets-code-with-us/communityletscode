@@ -12,6 +12,8 @@ import StartupCategories from './components/Startups';
 import LocationBasedCommunities from './components/Locationsbasedcommunity';
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import RefundPolicy from './pages/RefundPolicy';
+import About from './pages/About';
 
 
 function HomePage() {
@@ -39,6 +41,8 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} /> {/* New Route */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} /> {/* Privacy Policy */}
+          <Route path="/terms-of-refund" element={<RefundPolicy />} />
+          <Route path="/about-us" element={<About />} />
         </Routes>
         <Footer />
       </div>

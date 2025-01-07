@@ -1,41 +1,127 @@
-import { ArrowRight } from 'lucide-react';
+import { Users, Code, BookOpen, Target, Building2, MessageSquare } from 'lucide-react';
 
-export default function Hero() {
+const AboutUs = () => {
+  const stats = [
+    { label: 'Active Members', value: '10,000+' },
+    { label: 'Learning Resources', value: '500+' },
+    { label: 'Tech Topics', value: '50+' },
+    { label: 'Success Stories', value: '1,000+' }
+  ];
+
+  const values = [
+    {
+      icon: <Users className="w-6 h-6 text-black" />,
+      title: 'Community First',
+      description: 'We foster an inclusive environment where every member\'s journey matters.'
+    },
+    {
+      icon: <Code className="w-6 h-6 text-black" />,
+      title: 'Quality Education',
+      description: 'Providing access to premium tech education and resources for everyone.'
+    },
+    {
+      icon: <Target className="w-6 h-6 text-black" />,
+      title: 'Innovation Focus',
+      description: 'Staying ahead with cutting-edge technologies and industry trends.'
+    }
+  ];
+
+  const features = [
+    {
+      icon: <BookOpen className="w-6 h-6 text-black" />,
+      title: 'Learning Resources',
+      description: 'Access curated study materials, tutorials, and guides across various tech domains.'
+    },
+    {
+      icon: <Building2 className="w-6 h-6 text-black" />,
+      title: 'Career Opportunities',
+      description: 'Connect with leading tech companies and explore job opportunities.'
+    },
+    {
+      icon: <MessageSquare className="w-6 h-6 text-black" />,
+      title: 'Expert Networking',
+      description: 'Engage with industry professionals and build valuable connections.'
+    }
+  ];
+
   return (
-    <div className="relative bg-gray-100 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-8 bg-gray-100 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
-          <main className="mt-24 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 md:mt-28">
-            <div className="text-center">
-              <h2 className="text-lg text-gray-600 mb-6">
-                Lets Learn Together, Grow Together
-              </h2>
-              
-              <h1 className="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl mb-4">
-                <span className="block">
-                  Loved by <span className="text-red-500">40,0000 +</span> Engineers
-                </span>
-                <span className="block text-green-500">
-                  around the World
-                </span>
-              </h1>
-              
-              <p className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl mx-auto md:mt-5 md:text-xl">
-                Be a part of the most exclusive
-                <br />
-                community of India
-              </p>
-              
-              <div className="mt-8 sm:mt-10 flex justify-center">
-                <button className="inline-flex items-center justify-center px-8 py-2.5 border-2 border-green-500 text-base font-medium rounded-lg text-green-500 bg-transparent hover:bg-green-50 transition-all min-w-[180px]">
-                  Become a member
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </button>
-              </div>
-            </div>
-          </main>
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="relative bg-gray-100 py-20 border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl font-bold text-black mb-6">
+            Welcome to Let&apos;s Code
+          </h1>
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+            We are more than just a community; we are a thriving tech ecosystem designed to empower individuals on their journey through the ever-evolving world of technology.
+          </p>
         </div>
-      </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <p className="text-3xl font-bold text-black">{stat.value}</p>
+                <p className="text-gray-800 mt-1">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">Our Mission</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {values.map((value, index) => (
+              <div key={index} className="text-center p-6 rounded-lg border border-gray-300 hover:border-gray-400 transition-colors">
+                <div className="flex justify-center mb-4">
+                  {value.icon}
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-black">{value.title}</h3>
+                <p className="text-gray-800">{value.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-black mb-12">What We Offer</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <div key={index} className="p-6 rounded-lg border border-gray-300 hover:border-gray-400 transition-colors">
+                <div className="flex items-center mb-4">
+                  {feature.icon}
+                  <h3 className="text-xl font-semibold text-black ml-3">{feature.title}</h3>
+                </div>
+                <p className="text-gray-800">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Join Section */}
+      <section className="py-20 bg-gray-100 border-t">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-black mb-6">Join Our Community</h2>
+          <p className="text-xl text-gray-800 mb-8 max-w-3xl mx-auto">
+            Whether you&apos;re a student, a developer, or someone passionate about tech, join us to build, learn, and grow in a supportive community that&apos;s dedicated to your success.
+          </p>
+          <button className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+            Get Started
+          </button>
+        </div>
+      </section>
     </div>
   );
-}
+};
+
+export default AboutUs;
