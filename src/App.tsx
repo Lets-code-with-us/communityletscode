@@ -7,6 +7,10 @@ import Testimonials from './components/Testimonials';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import Profile from './pages/Profile';
+import JobUpdates from './components/Jobs';
+import StartupCategories from './components/Startups';
+import LocationBasedCommunities from './components/Locationsbasedcommunity';
+
 
 function HomePage() {
   return (
@@ -14,6 +18,9 @@ function HomePage() {
       <Hero />
       <CommunityHighlights />
       <CommunityGroups />
+      <LocationBasedCommunities />
+      <JobUpdates />
+      <StartupCategories />
       <Testimonials />
       <ContactForm />
     </>

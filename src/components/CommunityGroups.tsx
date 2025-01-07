@@ -5,49 +5,49 @@ const groups = [
     name: "DSA Masters",
     icon: Code,
     description: "Master Data Structures & Algorithms with daily problems and discussions",
-    members: "5.2k"
+    link: "https://chat.whatsapp.com/JaI4QlRwXgrCIy7NuL5fuA"
   },
   {
     name: "Full Stack Hub",
     icon: Users,
     description: "Connect with full stack developers and learn modern web development",
-    members: "8.1k"
+    link: "https://chat.whatsapp.com/J2V4N5d4I8MKpPlEsdEN0A"
   },
   {
     name: "Cloud Computing",
     icon: Cloud,
     description: "Explore AWS, Azure, GCP and cloud-native technologies",
-    members: "4.7k"
+    link: "https://chat.whatsapp.com/FKDHUWJPjEyCoG0VLKRbEZ"
   },
   {
     name: "Open Source",
     icon: Github,
     description: "Contribute to open source projects and grow your portfolio",
-    members: "6.3k"
+    link: "https://chat.whatsapp.com/ELpn6eu6b1A0lPXZ9Fr8nO"
   },
   {
     name: "AI/ML Engineers",
     icon: Brain,
     description: "Discuss AI, Machine Learning, and Deep Learning concepts",
-    members: "7.4k"
+    link: "https://chat.whatsapp.com/HTDJ0DN54xj6RlyEb1sDUG"
   },
   {
     name: "Data Science",
     icon: Database,
     description: "Learn data analysis, visualization, and statistical modeling",
-    members: "5.9k"
+    link: "https://chat.whatsapp.com/KCW6HycyQd2KoAYlC7Obsx"
   },
   {
     name: "Cyber Security",
     icon: Shield,
     description: "Explore security concepts, ethical hacking, and best practices",
-    members: "4.2k"
+    link: "https://chat.whatsapp.com/Cgi0isWfQ6VE3UnxUNjUzj"
   },
   {
     name: "QA Community",
     icon: TestTube,
     description: "Connect with QA engineers and learn testing methodologies",
-    members: "3.8k"
+    link: "https://chat.whatsapp.com/KWJg9gsVfgDCOxmJ0qvhku"
   }
 ];
 
@@ -74,10 +74,13 @@ export default function CommunityGroups() {
                   <h3 className="text-xl font-semibold text-gray-900">{group.name}</h3>
                   <p className="mt-2 text-gray-600">{group.description}</p>
                   <div className="mt-4 flex items-center justify-between">
-                    <span className="text-sm text-gray-500">{group.members} members</span>
-                    <button className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    <a 
+                      href={group.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
                       Join Group
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
