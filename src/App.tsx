@@ -10,6 +10,8 @@ import Profile from './pages/Profile';
 import JobUpdates from './components/Jobs';
 import StartupCategories from './components/Startups';
 import LocationBasedCommunities from './components/Locationsbasedcommunity';
+import TermsAndConditions from "./pages/TermsAndConditions";
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 
 function HomePage() {
@@ -35,6 +37,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} /> {/* New Route */}
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} /> {/* Privacy Policy */}
         </Routes>
         <Footer />
       </div>
