@@ -81,7 +81,19 @@ export default function ContactForm() {
             </div>
           </form>
         </div>
+        
       </div>
+      <div style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
+      <iframe
+        src="https://letscode24.substack.com/embed"
+        width="1000"
+        height="250"
+        style={{ border: "1px solid #EEE", background: "white" }}
+        frameBorder="0"
+        scrolling="no"
+        title="LetsCode24 Embed"
+      ></iframe>
+    </div>
     </section>
   );
 }
